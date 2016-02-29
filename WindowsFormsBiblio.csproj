@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5956696D-8F45-420A-B362-B7985211C807}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsBiblio</RootNamespace>
+    <AssemblyName>WindowsFormsBiblio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F50CFB53F9F77F6176FF40D7F42A39932A8D548C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsBiblio_CléTemporaire.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibraryBCDSC">
+      <HintPath>..\..\LibClassBCDSC\ClassLibrary1\bin\Debug\ClassLibraryBCDSC.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdoBcdSc.cs" />
+    <Compile Include="Auteur.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bcdStChristopheDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bcdStChristopheDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Classe.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Editeur.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMPRUNTS.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Exemplaire.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fn_resume_Result.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormBibSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBibSC.Designer.cs">
+      <DependentUpon>FormBibSC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnexion.Designer.cs">
+      <DependentUpon>FormConnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmprunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmprunt.Designer.cs">
+      <DependentUpon>FormEmprunt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmpEnCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmpEnCours.Designer.cs">
+      <DependentUpon>FormEmpEnCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRestit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRestit.Designer.cs">
+      <DependentUpon>FormRestit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResum.Designer.cs">
+      <DependentUpon>FormResum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScanEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScanEleve.Designer.cs">
+      <DependentUpon>FormScanEleve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historique.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Illustrateur.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="import.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Livres.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LIVRE_MEDIA.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Localisation.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBcdStChristophe.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBcdStChristophe.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBcdStChristophe.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBcdStChristophe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBcdStChristophe.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Motcle.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Personne.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Regles.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Resum.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Type.cs">
+      <DependentUpon>ModelBcdStChristophe.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormBibSC.resx">
+      <DependentUpon>FormBibSC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConnexion.resx">
+      <DependentUpon>FormConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmprunt.resx">
+      <DependentUpon>FormEmprunt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpEnCours.resx">
+      <DependentUpon>FormEmpEnCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRestit.resx">
+      <DependentUpon>FormRestit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResum.resx">
+      <DependentUpon>FormResum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormScanEleve.resx">
+      <DependentUpon>FormScanEleve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningCurve.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EntityDeploy Include="ModelBcdStChristophe.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelBcdStChristophe.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="bcdStChristopheDataSet.xsc">
+      <DependentUpon>bcdStChristopheDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bcdStChristopheDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bcdStChristopheDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bcdStChristopheDataSet.xss">
+      <DependentUpon>bcdStChristopheDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ModelBcdStChristophe.edmx.diagram">
+      <DependentUpon>ModelBcdStChristophe.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\AdoBcdSc.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ecoleSC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelBcdStChristophe.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelBcdStChristophe.edmx</DependentUpon>
+      <LastGenOutput>ModelBcdStChristophe.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelBcdStChristophe.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelBcdStChristophe.edmx</DependentUpon>
+      <LastGenOutput>ModelBcdStChristophe.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\Ok.png" />
+    <None Include="Resources\NotOk.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

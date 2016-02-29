@@ -1,0 +1,145 @@
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.pdb
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csprojResolveAssemblyReference.cache
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormBibSC.resources
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormConnexion.resources
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.Properties.Resources.resources
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csproj.GenerateResource.Cache
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.pdb
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csprojResolveAssemblyReference.cache
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormBibSC.resources
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormConnexion.resources
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmpruntRetour.resources
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmprunts.resources
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.Properties.Resources.resources
+D:\AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csproj.GenerateResource.Cache
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.pdb
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csprojResolveAssemblyReference.cache
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormBibSC.resources
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormConnexion.resources
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.Properties.Resources.resources
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csproj.GenerateResource.Cache
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\LearningCurve.ttf
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\LearningCurve.ttf
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.manifest
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.application
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe.manifest
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.application
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmprunt.resources
+E:\CDI AFPA\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmpEnCours.resources
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.manifest
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.application
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmprunt.resources
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmpEnCours.resources
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe.manifest
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.application
+C:\Users\laurent\Dropbox\Visual Studio 2012\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormRestit.resources
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\LearningCurve.ttf
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.manifest
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.application
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.pdb
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csprojResolveAssemblyReference.cache
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormBibSC.resources
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormConnexion.resources
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmprunt.resources
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmpEnCours.resources
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormRestit.resources
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormScanEleve.resources
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.Properties.Resources.resources
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csproj.GenerateResource.Cache
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe.manifest
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.application
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\LearningCurve.ttf
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.manifest
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.application
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.pdb
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csprojResolveAssemblyReference.cache
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormBibSC.resources
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormConnexion.resources
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmprunt.resources
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmpEnCours.resources
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormRestit.resources
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormScanEleve.resources
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.Properties.Resources.resources
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csproj.GenerateResource.Cache
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe.manifest
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.application
+D:\AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormResum.resources
+C:\Users\nicolas\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+C:\Users\nicolas\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+C:\Users\nicolas\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormResum.resources
+C:\Users\nde-vilder\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+C:\Users\nde-vilder\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+C:\Users\nde-vilder\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\EntityFramework.dll
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\EntityFramework.SqlServer.dll
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\EntityFramework.xml
+E:\CDI AFPA\Dropbox\Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormBibSC.resources
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormConnexion.resources
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmprunt.resources
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmpEnCours.resources
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormRestit.resources
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormResum.resources
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormScanEleve.resources
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csproj.GenerateResource.Cache
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\LearningCurve.ttf
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.manifest
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.application
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.pdb
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\EntityFramework.dll
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\EntityFramework.xml
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.Properties.Resources.resources
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe.manifest
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.application
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+C:\Users\lrek\Desktop\Sauvegarde 01022016Projet BIB\SolutinWinFormsBiblio\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+C:\Users\lrek\Desktop\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+C:\Users\lrek\Desktop\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+C:\Users\lrek\Desktop\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.config
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.pdb
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\bin\Debug\LearningCurve.ttf
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe.manifest
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.application
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.exe
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\bin\Debug\WindowsFormsBiblio.pdb
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\bin\Debug\EntityFramework.xml
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csprojResolveAssemblyReference.cache
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormBibSC.resources
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormConnexion.resources
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmprunt.resources
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormEmpEnCours.resources
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormRestit.resources
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormResum.resources
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.FormScanEleve.resources
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.Properties.Resources.resources
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.csproj.GenerateResource.Cache
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.exe.manifest
+C:\Users\lrek\Desktop\ENCOURS BSC\WindowsFormsBiblio\obj\Debug\WindowsFormsBiblio.application

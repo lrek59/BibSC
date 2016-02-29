@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bcdStChristopheModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AUTEUR">
+    <Key>
+      <PropertyRef Name="IDAUTEUR" />
+    </Key>
+    <Property Name="IDAUTEUR" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMAUTEUR" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PRENOMAUTEUR" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="LIVRES" Relationship="Self.ECRIRE" FromRole="AUTEUR" ToRole="LIVRES" />
+  </EntityType>
+  <EntityType Name="CLASSE">
+    <Key>
+      <PropertyRef Name="NOMCLASSE" />
+    </Key>
+    <Property Name="NOMCLASSE" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="PERSONNE" Relationship="Self.FK_PERSONNE_ASSOCIATI_CLASSE" FromRole="CLASSE" ToRole="PERSONNE" />
+  </EntityType>
+  <EntityType Name="EDITEUR">
+    <Key>
+      <PropertyRef Name="IDEDITEUR" />
+    </Key>
+    <Property Name="IDEDITEUR" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMEDITEUR" Type="String" MaxLength="40" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="EXEMPLAIRE" Relationship="Self.FK_EXEMPLAI_ASSOCIATI_EDITEUR" FromRole="EDITEUR" ToRole="EXEMPLAIRE" />
+  </EntityType>
+  <EntityType Name="HISTORIQUE">
+    <Key>
+      <PropertyRef Name="IDHISTO" />
+    </Key>
+    <Property Name="IDHISTO" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDEXEMPLAIRE" Type="Decimal" Precision="32" Scale="0" Nullable="false" />
+    <Property Name="IDPERSONNE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEDEBUT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATEFIN" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="PERSONNE" Relationship="Self.FK_HISTORIQ_ASSOCIATI_PERSONNE" FromRole="HISTORIQUE" ToRole="PERSONNE" />
+  </EntityType>
+  <EntityType Name="ILLUSTRATEUR">
+    <Key>
+      <PropertyRef Name="IDILLUS" />
+    </Key>
+    <Property Name="IDILLUS" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMILLUS" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PRENOMILLUS" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="LIVRES" Relationship="Self.ILLUSTRER" FromRole="ILLUSTRATEUR" ToRole="LIVRES" />
+  </EntityType>
+  <EntityType Name="import">
+    <Key>
+      <PropertyRef Name="idImport" />
+    </Key>
+    <Property Name="idImport" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="auteur1n" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="auteur1p" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="auteur1r" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="auteur2n" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="auteur2p" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="auteur2r" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="auteur3n" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="auteur3p" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="auteur3r" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="titre" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="editeurImport" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="cycleImport" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="TomeImport" Type="Byte" />
+  </EntityType>
+  <EntityType Name="LIVRES">
+    <Key>
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="ISBN" Type="Decimal" Precision="32" Scale="0" Nullable="false" />
+    <Property Name="NOMTYPE" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TITRE" Type="String" MaxLength="40" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TOME" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="CYCLE" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="EXEMPLAIRE" Relationship="Self.FK_EXEMPLAI_MATERIALI_LIVRES" FromRole="LIVRES" ToRole="EXEMPLAIRE" />
+    <NavigationProperty Name="TYPE" Relationship="Self.FK_LIVRES_TYPER_TYPE" FromRole="LIVRES" ToRole="TYPE" />
+    <NavigationProperty Name="AUTEUR" Relationship="Self.ECRIRE" FromRole="LIVRES" ToRole="AUTEUR" />
+    <NavigationProperty Name="ILLUSTRATEUR" Relationship="Self.ILLUSTRER" FromRole="LIVRES" ToRole="ILLUSTRATEUR" />
+    <NavigationProperty Name="MOTCLEF" Relationship="Self.MOTCLEFLIVRE" FromRole="LIVRES" ToRole="MOTCLEF" />
+  </EntityType>
+  <EntityType Name="LOCALISATION">
+    <Key>
+      <PropertyRef Name="CODELOC" />
+    </Key>
+    <Property Name="CODELOC" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="EXEMPLAIRE" Relationship="Self.FK_EXEMPLAI_ASSOCIATI_LOCALISA" FromRole="LOCALISATION" ToRole="EXEMPLAIRE" />
+  </EntityType>
+  <EntityType Name="MOTCLEF">
+    <Key>
+      <PropertyRef Name="IDCLE" />
+    </Key>
+    <Property Name="MOTCLEF1" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="IDCLE" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="LIVRES" Relationship="Self.MOTCLEFLIVRE" FromRole="MOTCLEF" ToRole="LIVRES" />
+  </EntityType>
+  <EntityType Name="PERSONNE">
+    <Key>
+      <PropertyRef Name="IDPERSONNE" />
+    </Key>
+    <Property Name="IDPERSONNE" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMCLASSE" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="NOM" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PRENOM" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PERSONNEL" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CLASSE" Relationship="Self.FK_PERSONNE_ASSOCIATI_CLASSE" FromRole="PERSONNE" ToRole="CLASSE" />
+    <NavigationProperty Name="HISTORIQUE" Relationship="Self.FK_HISTORIQ_ASSOCIATI_PERSONNE" FromRole="PERSONNE" ToRole="HISTORIQUE" />
+    <NavigationProperty Name="EXEMPLAIRE" Relationship="Self.FK_EXEMPLAI_ASSOCIATI_PERSONNE" FromRole="PERSONNE" ToRole="EXEMPLAIRE" />
+  </EntityType>
+  <EntityType Name="REGLES">
+    <Key>
+      <PropertyRef Name="NOMECOLE" />
+    </Key>
+    <Property Name="NOMECOLE" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DUREEMAX" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="QUANTITEEMAX" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="ADRESSEECOLE_1" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="TELECOLE" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="MAILECOLE" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="ADRESSEECOLE2" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TYPE">
+    <Key>
+      <PropertyRef Name="NOMTYPE" />
+    </Key>
+    <Property Name="NOMTYPE" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="LIVRES" Relationship="Self.FK_LIVRES_TYPER_TYPE" FromRole="TYPE" ToRole="LIVRES" />
+  </EntityType>
+  <EntityType Name="EXEMPLAIRE">
+    <Key>
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="CODELOC" />
+      <PropertyRef Name="IDEDITEUR" />
+      <PropertyRef Name="MEDIATHEQUE" />
+    </Key>
+    <Property Name="IDEXEMPLAIRE" Type="Decimal" Precision="32" Scale="0" />
+    <Property Name="IDPERSONNE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISBN" Type="Decimal" Precision="32" Scale="0" Nullable="false" />
+    <Property Name="CODELOC" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="IDEDITEUR" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEACHAT" Type="DateTime" Precision="3" />
+    <Property Name="ETAT" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="MEDIATHEQUE" Type="Boolean" Nullable="false" />
+    <Property Name="DATESORTIE" Type="DateTime" Precision="3" />
+    <Property Name="DATEEMPRUNT" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="EDITEUR" Relationship="Self.FK_EXEMPLAI_ASSOCIATI_EDITEUR" FromRole="EXEMPLAIRE" ToRole="EDITEUR" />
+    <NavigationProperty Name="LIVRES" Relationship="Self.FK_EXEMPLAI_MATERIALI_LIVRES" FromRole="EXEMPLAIRE" ToRole="LIVRES" />
+    <NavigationProperty Name="LOCALISATION" Relationship="Self.FK_EXEMPLAI_ASSOCIATI_LOCALISA" FromRole="EXEMPLAIRE" ToRole="LOCALISATION" />
+    <NavigationProperty Name="PERSONNE" Relationship="Self.FK_EXEMPLAI_ASSOCIATI_PERSONNE" FromRole="EXEMPLAIRE" ToRole="PERSONNE" />
+  </EntityType>
+  <EntityType Name="EMPRUNTS">
+    <Key>
+      <PropertyRef Name="NOM" />
+      <PropertyRef Name="PRENOM" />
+      <PropertyRef Name="Titre" />
+    </Key>
+    <Property Name="NOM" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PRENOM" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="NOMCLASSE" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="DATEEMPRUNT" Type="DateTime" Precision="3" />
+    <Property Name="Titre" Type="String" MaxLength="40" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PERSONNE_ASSOCIATI_CLASSE">
+    <End Role="CLASSE" Type="Self.CLASSE" Multiplicity="0..1" />
+    <End Role="PERSONNE" Type="Self.PERSONNE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLASSE">
+        <PropertyRef Name="NOMCLASSE" />
+      </Principal>
+      <Dependent Role="PERSONNE">
+        <PropertyRef Name="NOMCLASSE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXEMPLAI_ASSOCIATI_EDITEUR">
+    <End Role="EDITEUR" Type="Self.EDITEUR" Multiplicity="1" />
+    <End Role="EXEMPLAIRE" Type="Self.EXEMPLAIRE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EDITEUR">
+        <PropertyRef Name="IDEDITEUR" />
+      </Principal>
+      <Dependent Role="EXEMPLAIRE">
+        <PropertyRef Name="IDEDITEUR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HISTORIQ_ASSOCIATI_PERSONNE">
+    <End Role="PERSONNE" Type="Self.PERSONNE" Multiplicity="1" />
+    <End Role="HISTORIQUE" Type="Self.HISTORIQUE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERSONNE">
+        <PropertyRef Name="IDPERSONNE" />
+      </Principal>
+      <Dependent Role="HISTORIQUE">
+        <PropertyRef Name="IDPERSONNE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXEMPLAI_MATERIALI_LIVRES">
+    <End Role="LIVRES" Type="Self.LIVRES" Multiplicity="1" />
+    <End Role="EXEMPLAIRE" Type="Self.EXEMPLAIRE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LIVRES">
+        <PropertyRef Name="ISBN" />
+      </Principal>
+      <Dependent Role="EXEMPLAIRE">
+        <PropertyRef Name="ISBN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LIVRES_TYPER_TYPE">
+    <End Role="TYPE" Type="Self.TYPE" Multiplicity="1" />
+    <End Role="LIVRES" Type="Self.LIVRES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TYPE">
+        <PropertyRef Name="NOMTYPE" />
+      </Principal>
+      <Dependent Role="LIVRES">
+        <PropertyRef Name="NOMTYPE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXEMPLAI_ASSOCIATI_LOCALISA">
+    <End Role="LOCALISATION" Type="Self.LOCALISATION" Multiplicity="1" />
+    <End Role="EXEMPLAIRE" Type="Self.EXEMPLAIRE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOCALISATION">
+        <PropertyRef Name="CODELOC" />
+      </Principal>
+      <Dependent Role="EXEMPLAIRE">
+        <PropertyRef Name="CODELOC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXEMPLAI_ASSOCIATI_PERSONNE">
+    <End Role="PERSONNE" Type="Self.PERSONNE" Multiplicity="0..1" />
+    <End Role="EXEMPLAIRE" Type="Self.EXEMPLAIRE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERSONNE">
+        <PropertyRef Name="IDPERSONNE" />
+      </Principal>
+      <Dependent Role="EXEMPLAIRE">
+        <PropertyRef Name="IDPERSONNE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ECRIRE">
+    <End Role="AUTEUR" Type="Self.AUTEUR" Multiplicity="*" />
+    <End Role="LIVRES" Type="Self.LIVRES" Multiplicity="*" />
+  </Association>
+  <Association Name="ILLUSTRER">
+    <End Role="ILLUSTRATEUR" Type="Self.ILLUSTRATEUR" Multiplicity="*" />
+    <End Role="LIVRES" Type="Self.LIVRES" Multiplicity="*" />
+  </Association>
+  <Association Name="MOTCLEFLIVRE">
+    <End Role="LIVRES" Type="Self.LIVRES" Multiplicity="*" />
+    <End Role="MOTCLEF" Type="Self.MOTCLEF" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="bcdStChristopheEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AUTEUR" EntityType="Self.AUTEUR" />
+    <EntitySet Name="CLASSE" EntityType="Self.CLASSE" />
+    <EntitySet Name="EDITEUR" EntityType="Self.EDITEUR" />
+    <EntitySet Name="HISTORIQUE" EntityType="Self.HISTORIQUE" />
+    <EntitySet Name="ILLUSTRATEUR" EntityType="Self.ILLUSTRATEUR" />
+    <EntitySet Name="import" EntityType="Self.import" />
+    <EntitySet Name="LIVRES" EntityType="Self.LIVRES" />
+    <EntitySet Name="LOCALISATION" EntityType="Self.LOCALISATION" />
+    <EntitySet Name="MOTCLEF" EntityType="Self.MOTCLEF" />
+    <EntitySet Name="PERSONNE" EntityType="Self.PERSONNE" />
+    <EntitySet Name="REGLES" EntityType="Self.REGLES" />
+    <EntitySet Name="TYPE" EntityType="Self.TYPE" />
+    <EntitySet Name="EXEMPLAIRE" EntityType="Self.EXEMPLAIRE" />
+    <EntitySet Name="EMPRUNTS" EntityType="Self.EMPRUNTS" />
+    <AssociationSet Name="FK_PERSONNE_ASSOCIATI_CLASSE" Association="Self.FK_PERSONNE_ASSOCIATI_CLASSE">
+      <End Role="CLASSE" EntitySet="CLASSE" />
+      <End Role="PERSONNE" EntitySet="PERSONNE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXEMPLAI_ASSOCIATI_EDITEUR" Association="Self.FK_EXEMPLAI_ASSOCIATI_EDITEUR">
+      <End Role="EDITEUR" EntitySet="EDITEUR" />
+      <End Role="EXEMPLAIRE" EntitySet="EXEMPLAIRE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HISTORIQ_ASSOCIATI_PERSONNE" Association="Self.FK_HISTORIQ_ASSOCIATI_PERSONNE">
+      <End Role="PERSONNE" EntitySet="PERSONNE" />
+      <End Role="HISTORIQUE" EntitySet="HISTORIQUE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXEMPLAI_MATERIALI_LIVRES" Association="Self.FK_EXEMPLAI_MATERIALI_LIVRES">
+      <End Role="LIVRES" EntitySet="LIVRES" />
+      <End Role="EXEMPLAIRE" EntitySet="EXEMPLAIRE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LIVRES_TYPER_TYPE" Association="Self.FK_LIVRES_TYPER_TYPE">
+      <End Role="TYPE" EntitySet="TYPE" />
+      <End Role="LIVRES" EntitySet="LIVRES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXEMPLAI_ASSOCIATI_LOCALISA" Association="Self.FK_EXEMPLAI_ASSOCIATI_LOCALISA">
+      <End Role="LOCALISATION" EntitySet="LOCALISATION" />
+      <End Role="EXEMPLAIRE" EntitySet="EXEMPLAIRE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXEMPLAI_ASSOCIATI_PERSONNE" Association="Self.FK_EXEMPLAI_ASSOCIATI_PERSONNE">
+      <End Role="PERSONNE" EntitySet="PERSONNE" />
+      <End Role="EXEMPLAIRE" EntitySet="EXEMPLAIRE" />
+    </AssociationSet>
+    <AssociationSet Name="ECRIRE" Association="Self.ECRIRE">
+      <End Role="AUTEUR" EntitySet="AUTEUR" />
+      <End Role="LIVRES" EntitySet="LIVRES" />
+    </AssociationSet>
+    <AssociationSet Name="ILLUSTRER" Association="Self.ILLUSTRER">
+      <End Role="ILLUSTRATEUR" EntitySet="ILLUSTRATEUR" />
+      <End Role="LIVRES" EntitySet="LIVRES" />
+    </AssociationSet>
+    <AssociationSet Name="MOTCLEFLIVRE" Association="Self.MOTCLEFLIVRE">
+      <End Role="LIVRES" EntitySet="LIVRES" />
+      <End Role="MOTCLEF" EntitySet="MOTCLEF" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bcdStChristopheModelStoreContainer" CdmEntityContainer="bcdStChristopheEntities1">
+    <EntitySetMapping Name="Auteur">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Auteur">
+        <MappingFragment StoreEntitySet="Auteur">
+          <ScalarProperty Name="IdAuteur" ColumnName="IdAuteur" />
+          <ScalarProperty Name="Nomauteur" ColumnName="Nomauteur" />
+          <ScalarProperty Name="Prenomauteur" ColumnName="Prenomauteur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Classe">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Classe">
+        <MappingFragment StoreEntitySet="Classe">
+          <ScalarProperty Name="Nomclasse" ColumnName="Nomclasse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Editeur">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Editeur">
+        <MappingFragment StoreEntitySet="Editeur">
+          <ScalarProperty Name="IdEditeur" ColumnName="IdEditeur" />
+          <ScalarProperty Name="NomEditeur" ColumnName="NomEditeur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exemplaire">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Exemplaire">
+        <MappingFragment StoreEntitySet="Exemplaire">
+          <ScalarProperty Name="IdExemplaire" ColumnName="IdExemplaire" />
+          <ScalarProperty Name="IdPersonne" ColumnName="IdPersonne" />
+          <ScalarProperty Name="Isbn" ColumnName="Isbn" />
+          <ScalarProperty Name="CodeLoc" ColumnName="CodeLoc" />
+          <ScalarProperty Name="IdEditeur" ColumnName="IdEditeur" />
+          <ScalarProperty Name="DateAchat" ColumnName="DateAchat" />
+          <ScalarProperty Name="Etat" ColumnName="Etat" />
+          <ScalarProperty Name="Mediatheque" ColumnName="Mediatheque" />
+          <ScalarProperty Name="DateSortie" ColumnName="DateSortie" />
+          <ScalarProperty Name="DateEmprunt" ColumnName="DateEmprunt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Historique">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Historique">
+        <MappingFragment StoreEntitySet="Historique">
+          <ScalarProperty Name="IdHisto" ColumnName="IdHisto" />
+          <ScalarProperty Name="IdExemplaire" ColumnName="IdExemplaire" />
+          <ScalarProperty Name="IdPersonne" ColumnName="IdPersonne" />
+          <ScalarProperty Name="DateDebut" ColumnName="DateDebut" />
+          <ScalarProperty Name="DateFin" ColumnName="DateFin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Illustrateur">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Illustrateur">
+        <MappingFragment StoreEntitySet="Illustrateur">
+          <ScalarProperty Name="IdIllus" ColumnName="IdIllus" />
+          <ScalarProperty Name="NomIllus" ColumnName="NomIllus" />
+          <ScalarProperty Name="PrenomIllus" ColumnName="PrenomIllus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="import">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.import">
+        <MappingFragment StoreEntitySet="import">
+          <ScalarProperty Name="idImport" ColumnName="idImport" />
+          <ScalarProperty Name="auteur1n" ColumnName="auteur1n" />
+          <ScalarProperty Name="auteur1p" ColumnName="auteur1p" />
+          <ScalarProperty Name="auteur1r" ColumnName="auteur1r" />
+          <ScalarProperty Name="auteur2n" ColumnName="auteur2n" />
+          <ScalarProperty Name="auteur2p" ColumnName="auteur2p" />
+          <ScalarProperty Name="auteur2r" ColumnName="auteur2r" />
+          <ScalarProperty Name="auteur3n" ColumnName="auteur3n" />
+          <ScalarProperty Name="auteur3p" ColumnName="auteur3p" />
+          <ScalarProperty Name="auteur3r" ColumnName="auteur3r" />
+          <ScalarProperty Name="titre" ColumnName="titre" />
+          <ScalarProperty Name="editeurImport" ColumnName="editeurImport" />
+          <ScalarProperty Name="cycleImport" ColumnName="cycleImport" />
+          <ScalarProperty Name="TomeImport" ColumnName="TomeImport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Livres">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Livres">
+        <MappingFragment StoreEntitySet="Livres">
+          <ScalarProperty Name="Isbn" ColumnName="Isbn" />
+          <ScalarProperty Name="NomType" ColumnName="NomType" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="Tome" ColumnName="Tome" />
+          <ScalarProperty Name="Cycle" ColumnName="Cycle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Localisation">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Localisation">
+        <MappingFragment StoreEntitySet="Localisation">
+          <ScalarProperty Name="CodeLoc" ColumnName="CodeLoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Motcle">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Motcle">
+        <MappingFragment StoreEntitySet="Motcle">
+          <ScalarProperty Name="MotCle1" ColumnName="MotCle" />
+          <ScalarProperty Name="IdCle" ColumnName="IdCle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personne">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Personne">
+        <MappingFragment StoreEntitySet="Personne">
+          <ScalarProperty Name="IdPersonne" ColumnName="IdPersonne" />
+          <ScalarProperty Name="NomClasse" ColumnName="NomClasse" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Personnel" ColumnName="Personnel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regles">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Regles">
+        <MappingFragment StoreEntitySet="Regles">
+          <ScalarProperty Name="NomEcole" ColumnName="NomEcole" />
+          <ScalarProperty Name="DureeMax" ColumnName="DureeMax" />
+          <ScalarProperty Name="QunatiteMax" ColumnName="QunatiteMax" />
+          <ScalarProperty Name="AdresseEcole1" ColumnName="AdresseEcole1" />
+          <ScalarProperty Name="TelEcole" ColumnName="TelEcole" />
+          <ScalarProperty Name="MailEcole" ColumnName="MailEcole" />
+          <ScalarProperty Name="AdresseEcole2" ColumnName="AdresseEcole2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Type">
+        <MappingFragment StoreEntitySet="Type">
+          <ScalarProperty Name="NomType" ColumnName="NomType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPRUNTS">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.EMPRUNTS">
+        <MappingFragment StoreEntitySet="EMPRUNTS">
+          <ScalarProperty Name="NOM" ColumnName="NOM" />
+          <ScalarProperty Name="PRENOM" ColumnName="PRENOM" />
+          <ScalarProperty Name="NOMCLASSE" ColumnName="NOMCLASSE" />
+          <ScalarProperty Name="DATEEMPRUNT" ColumnName="DATEEMPRUNT" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LIVRE_MEDIA">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.LIVRE_MEDIA">
+        <MappingFragment StoreEntitySet="LIVRE_MEDIA">
+          <ScalarProperty Name="IDEXEMPLAIRE" ColumnName="IDEXEMPLAIRE" />
+          <ScalarProperty Name="rangement" ColumnName="rangement" />
+          <ScalarProperty Name="TITRE" ColumnName="TITRE" />
+          <ScalarProperty Name="NOMAUTEUR" ColumnName="NOMAUTEUR" />
+          <ScalarProperty Name="PRENOMAUTEUR" ColumnName="PRENOMAUTEUR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Ecrire" TypeName="bcdStChristopheModel.Ecrire" StoreEntitySet="Ecrire">
+      <EndProperty Name="Auteur">
+        <ScalarProperty Name="IdAuteur" ColumnName="IdAuteur" />
+      </EndProperty>
+      <EndProperty Name="Livres">
+        <ScalarProperty Name="Isbn" ColumnName="Isbn" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Illustrer" TypeName="bcdStChristopheModel.Illustrer" StoreEntitySet="Illustrer">
+      <EndProperty Name="Illustrateur">
+        <ScalarProperty Name="IdIllus" ColumnName="IdIllus" />
+      </EndProperty>
+      <EndProperty Name="Livres">
+        <ScalarProperty Name="Isbn" ColumnName="Isbn" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MotCleLivre" TypeName="bcdStChristopheModel.MotCleLivre" StoreEntitySet="MotCleLivre">
+      <EndProperty Name="Livres">
+        <ScalarProperty Name="Isbn" ColumnName="Isbn" />
+      </EndProperty>
+      <EndProperty Name="Motcle">
+        <ScalarProperty Name="IdCle" ColumnName="IdCle" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Resum">
+      <EntityTypeMapping TypeName="bcdStChristopheModel.Resum">
+        <MappingFragment StoreEntitySet="Resum">
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="Prenomauteur" ColumnName="Prenomauteur" />
+          <ScalarProperty Name="Nomauteur" ColumnName="Nomauteur" />
+          <ScalarProperty Name="IdExemplaire" ColumnName="IdExemplaire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="fn_resume" FunctionName="bcdStChristopheModel.Store.fn_resume">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bcdStChristopheModel.fn_resume_Result">
+          <ScalarProperty Name="Nomauteur" ColumnName="Nomauteur" />
+          <ScalarProperty Name="prenomauteur" ColumnName="prenomauteur" />
+          <ScalarProperty Name="titre" ColumnName="titre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="df32c0cc9fee499592dcc2a08d2a8a04" Name="Diagram1">
+        <EntityTypeShape EntityType="bcdStChristopheModel.Auteur" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Classe" Width="1.5" PointX="2.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Editeur" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Exemplaire" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Historique" Width="1.5" PointX="7.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Illustrateur" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.import" Width="1.5" PointX="4.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Livres" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Localisation" Width="1.5" PointX="6.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Motcle" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Personne" Width="1.5" PointX="5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Regles" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Type" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.EMPRUNTS" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.LIVRE_MEDIA" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="bcdStChristopheModel.FK_PERSONNE_ASSOCIATI_CLASSE" ManuallyRouted="false" />
+        <AssociationConnector Association="bcdStChristopheModel.FK_HISTORIQ_ASSOCIATI_PERSONNE" ManuallyRouted="false" />
+        <AssociationConnector Association="bcdStChristopheModel.FK_LIVRES_TYPER_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="bcdStChristopheModel.Ecrire" ManuallyRouted="false" />
+        <AssociationConnector Association="bcdStChristopheModel.Illustrer" ManuallyRouted="false" />
+        <AssociationConnector Association="bcdStChristopheModel.MotCleLivre" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="bcdStChristopheModel.Resum" Width="1.5" PointX="11.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bcdStChristopheModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Auteur">
+    <Key>
+      <PropertyRef Name="IdAuteur" />
+    </Key>
+    <Property Name="IdAuteur" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nomauteur" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Prenomauteur" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="Classe">
+    <Key>
+      <PropertyRef Name="Nomclasse" />
+    </Key>
+    <Property Name="Nomclasse" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ecrire">
+    <Key>
+      <PropertyRef Name="IdAuteur" />
+      <PropertyRef Name="Isbn" />
+    </Key>
+    <Property Name="IdAuteur" Type="int" Nullable="false" />
+    <Property Name="Isbn" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Editeur">
+    <Key>
+      <PropertyRef Name="IdEditeur" />
+    </Key>
+    <Property Name="IdEditeur" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomEditeur" Type="varchar" MaxLength="35" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Exemplaire">
+    <Key>
+      <PropertyRef Name="IdExemplaire" />
+    </Key>
+    <Property Name="IdExemplaire" Type="bigint" Nullable="false" />
+    <Property Name="IdPersonne" Type="bigint" />
+    <Property Name="Isbn" Type="bigint" Nullable="false" />
+    <Property Name="CodeLoc" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="IdEditeur" Type="int" Nullable="false" />
+    <Property Name="DateAchat" Type="datetime" />
+    <Property Name="Etat" Type="varchar" MaxLength="20" />
+    <Property Name="Mediatheque" Type="bit" Nullable="false" />
+    <Property Name="DateSortie" Type="datetime" />
+    <Property Name="DateEmprunt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Historique">
+    <Key>
+      <PropertyRef Name="IdHisto" />
+    </Key>
+    <Property Name="IdHisto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdExemplaire" Type="bigint" Nullable="false" />
+    <Property Name="IdPersonne" Type="bigint" Nullable="false" />
+    <Property Name="DateDebut" Type="smalldatetime" Nullable="false" />
+    <Property Name="DateFin" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Illustrateur">
+    <Key>
+      <PropertyRef Name="IdIllus" />
+    </Key>
+    <Property Name="IdIllus" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomIllus" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="PrenomIllus" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="Illustrer">
+    <Key>
+      <PropertyRef Name="IdIllus" />
+      <PropertyRef Name="Isbn" />
+    </Key>
+    <Property Name="IdIllus" Type="int" Nullable="false" />
+    <Property Name="Isbn" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="import">
+    <Key>
+      <PropertyRef Name="idImport" />
+    </Key>
+    <Property Name="idImport" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="auteur1n" Type="varchar" MaxLength="25" />
+    <Property Name="auteur1p" Type="varchar" MaxLength="25" />
+    <Property Name="auteur1r" Type="varchar" MaxLength="25" />
+    <Property Name="auteur2n" Type="varchar" MaxLength="25" />
+    <Property Name="auteur2p" Type="varchar" MaxLength="25" />
+    <Property Name="auteur2r" Type="varchar" MaxLength="25" />
+    <Property Name="auteur3n" Type="varchar" MaxLength="25" />
+    <Property Name="auteur3p" Type="varchar" MaxLength="25" />
+    <Property Name="auteur3r" Type="varchar" MaxLength="25" />
+    <Property Name="titre" Type="varchar" MaxLength="40" />
+    <Property Name="editeurImport" Type="varchar" MaxLength="35" />
+    <Property Name="cycleImport" Type="varchar" MaxLength="40" />
+    <Property Name="TomeImport" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Livres">
+    <Key>
+      <PropertyRef Name="Isbn" />
+    </Key>
+    <Property Name="Isbn" Type="bigint" Nullable="false" />
+    <Property Name="NomType" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Titre" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Tome" Type="tinyint" />
+    <Property Name="Cycle" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Localisation">
+    <Key>
+      <PropertyRef Name="CodeLoc" />
+    </Key>
+    <Property Name="CodeLoc" Type="varchar" MaxLength="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Motcle">
+    <Key>
+      <PropertyRef Name="IdCle" />
+    </Key>
+    <Property Name="MotCle" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="IdCle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MotCleLivre">
+    <Key>
+      <PropertyRef Name="IdCle" />
+      <PropertyRef Name="Isbn" />
+    </Key>
+    <Property Name="IdCle" Type="int" Nullable="false" />
+    <Property Name="Isbn" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personne">
+    <Key>
+      <PropertyRef Name="IdPersonne" />
+    </Key>
+    <Property Name="IdPersonne" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomClasse" Type="varchar" MaxLength="6" />
+    <Property Name="Nom" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Prenom" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Personnel" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Regles">
+    <Key>
+      <PropertyRef Name="NomEcole" />
+    </Key>
+    <Property Name="NomEcole" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="DureeMax" Type="tinyint" Nullable="false" />
+    <Property Name="QunatiteMax" Type="tinyint" Nullable="false" />
+    <Property Name="AdresseEcole1" Type="varchar" MaxLength="40" />
+    <Property Name="TelEcole" Type="int" />
+    <Property Name="MailEcole" Type="varchar" MaxLength="30" />
+    <Property Name="AdresseEcole2" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Type">
+    <Key>
+      <PropertyRef Name="NomType" />
+    </Key>
+    <Property Name="NomType" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'bcdStChristophe.dbo.EMPRUNTS' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="EMPRUNTS">
+    <Key>
+      <PropertyRef Name="NOM" />
+      <PropertyRef Name="PRENOM" />
+      <PropertyRef Name="Titre" />
+    </Key>
+    <Property Name="NOM" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="PRENOM" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="NOMCLASSE" Type="varchar" MaxLength="6" />
+    <Property Name="DATEEMPRUNT" Type="datetime" />
+    <Property Name="Titre" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'bcdStChristophe.dbo.LIVRE_MEDIA' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="LIVRE_MEDIA">
+    <Key>
+      <PropertyRef Name="IDEXEMPLAIRE" />
+    </Key>
+    <Property Name="IDEXEMPLAIRE" Type="bigint" Nullable="false" />
+    <Property Name="rangement" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="TITRE" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="NOMAUTEUR" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="PRENOMAUTEUR" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'bcdStChristophe.dbo.Resum' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="Resum">
+    <Key>
+      <PropertyRef Name="IdExemplaire" />
+    </Key>
+    <Property Name="IdExemplaire" Type="bigint" Nullable="false" />
+    <Property Name="Nomauteur" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Prenomauteur" Type="varchar" MaxLength="25" />
+    <Property Name="Titre" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ASSOCIAT_ASSOCIATI_LIVRES">
+    <End Role="Livres" Type="Self.Livres" Multiplicity="1" />
+    <End Role="MotCleLivre" Type="Self.MotCleLivre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Livres">
+        <PropertyRef Name="Isbn" />
+      </Principal>
+      <Dependent Role="MotCleLivre">
+        <PropertyRef Name="Isbn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ASSOCIAT_ASSOCIATI_MOTCLEF">
+    <End Role="Motcle" Type="Self.Motcle" Multiplicity="1" />
+    <End Role="MotCleLivre" Type="Self.MotCleLivre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Motcle">
+        <PropertyRef Name="IdCle" />
+      </Principal>
+      <Dependent Role="MotCleLivre">
+        <PropertyRef Name="IdCle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ECRIRE_ECRIRE_AUTEUR">
+    <End Role="Auteur" Type="Self.Auteur" Multiplicity="1" />
+    <End Role="Ecrire" Type="Self.Ecrire" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Auteur">
+        <PropertyRef Name="IdAuteur" />
+      </Principal>
+      <Dependent Role="Ecrire">
+        <PropertyRef Name="IdAuteur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ECRIRE_ECRIRE2_LIVRES">
+    <End Role="Livres" Type="Self.Livres" Multiplicity="1" />
+    <End Role="Ecrire" Type="Self.Ecrire" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Livres">
+        <PropertyRef Name="Isbn" />
+      </Principal>
+      <Dependent Role="Ecrire">
+        <PropertyRef Name="Isbn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HISTORIQ_ASSOCIATI_PERSONNE">
+    <End Role="Personne" Type="Self.Personne" Multiplicity="1" />
+    <End Role="Historique" Type="Self.Historique" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personne">
+        <PropertyRef Name="IdPersonne" />
+      </Principal>
+      <Dependent Role="Historique">
+        <PropertyRef Name="IdPersonne" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ILLUSTRE_ILLUSTRER_ILLUSTRA">
+    <End Role="Illustrateur" Type="Self.Illustrateur" Multiplicity="1" />
+    <End Role="Illustrer" Type="Self.Illustrer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Illustrateur">
+        <PropertyRef Name="IdIllus" />
+      </Principal>
+      <Dependent Role="Illustrer">
+        <PropertyRef Name="IdIllus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ILLUSTRE_ILLUSTRER_LIVRES">
+    <End Role="Livres" Type="Self.Livres" Multiplicity="1" />
+    <End Role="Illustrer" Type="Self.Illustrer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Livres">
+        <PropertyRef Name="Isbn" />
+      </Principal>
+      <Dependent Role="Illustrer">
+        <PropertyRef Name="Isbn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LIVRES_TYPER_TYPE">
+    <End Role="Type" Type="Self.Type" Multiplicity="1" />
+    <End Role="Livres" Type="Self.Livres" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type">
+        <PropertyRef Name="NomType" />
+      </Principal>
+      <Dependent Role="Livres">
+        <PropertyRef Name="NomType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERSONNE_ASSOCIATI_CLASSE">
+    <End Role="Classe" Type="Self.Classe" Multiplicity="0..1" />
+    <End Role="Personne" Type="Self.Personne" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Classe">
+        <PropertyRef Name="Nomclasse" />
+      </Principal>
+      <Dependent Role="Personne">
+        <PropertyRef Name="NomClasse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_resume" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idExempl" Type="bigint" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="Nomauteur" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="prenomauteur" Type="varchar" MaxLength="25" />
+          <Property Name="titre" Type="varchar" MaxLength="40" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <EntityContainer Name="bcdStChristopheModelStoreContainer">
+    <EntitySet Name="Auteur" EntityType="Self.Auteur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Classe" EntityType="Self.Classe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ecrire" EntityType="Self.Ecrire" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Editeur" EntityType="Self.Editeur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Exemplaire" EntityType="Self.Exemplaire" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Historique" EntityType="Self.Historique" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Illustrateur" EntityType="Self.Illustrateur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Illustrer" EntityType="Self.Illustrer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="import" EntityType="Self.import" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Livres" EntityType="Self.Livres" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Localisation" EntityType="Self.Localisation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Motcle" EntityType="Self.Motcle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MotCleLivre" EntityType="Self.MotCleLivre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Personne" EntityType="Self.Personne" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Regles" EntityType="Self.Regles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Type" EntityType="Self.Type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMPRUNTS" EntityType="Self.EMPRUNTS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EMPRUNTS].[NOM] AS [NOM], 
+    [EMPRUNTS].[PRENOM] AS [PRENOM], 
+    [EMPRUNTS].[NOMCLASSE] AS [NOMCLASSE], 
+    [EMPRUNTS].[DATEEMPRUNT] AS [DATEEMPRUNT], 
+    [EMPRUNTS].[Titre] AS [Titre]
+    FROM [dbo].[EMPRUNTS] AS [EMPRUNTS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LIVRE_MEDIA" EntityType="Self.LIVRE_MEDIA" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LIVRE_MEDIA].[IDEXEMPLAIRE] AS [IDEXEMPLAIRE], 
+    [LIVRE_MEDIA].[rangement] AS [rangement], 
+    [LIVRE_MEDIA].[TITRE] AS [TITRE], 
+    [LIVRE_MEDIA].[NOMAUTEUR] AS [NOMAUTEUR], 
+    [LIVRE_MEDIA].[PRENOMAUTEUR] AS [PRENOMAUTEUR]
+    FROM [dbo].[LIVRE_MEDIA] AS [LIVRE_MEDIA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Resum" EntityType="Self.Resum" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Resum].[IdExemplaire] AS [IdExemplaire], 
+    [Resum].[Nomauteur] AS [Nomauteur], 
+    [Resum].[Prenomauteur] AS [Prenomauteur], 
+    [Resum].[Titre] AS [Titre]
+    FROM [dbo].[Resum] AS [Resum]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_ASSOCIAT_ASSOCIATI_LIVRES" Association="Self.FK_ASSOCIAT_ASSOCIATI_LIVRES">
+      <End Role="Livres" EntitySet="Livres" />
+      <End Role="MotCleLivre" EntitySet="MotCleLivre" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ASSOCIAT_ASSOCIATI_MOTCLEF" Association="Self.FK_ASSOCIAT_ASSOCIATI_MOTCLEF">
+      <End Role="Motcle" EntitySet="Motcle" />
+      <End Role="MotCleLivre" EntitySet="MotCleLivre" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ECRIRE_ECRIRE_AUTEUR" Association="Self.FK_ECRIRE_ECRIRE_AUTEUR">
+      <End Role="Auteur" EntitySet="Auteur" />
+      <End Role="Ecrire" EntitySet="Ecrire" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ECRIRE_ECRIRE2_LIVRES" Association="Self.FK_ECRIRE_ECRIRE2_LIVRES">
+      <End Role="Livres" EntitySet="Livres" />
+      <End Role="Ecrire" EntitySet="Ecrire" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HISTORIQ_ASSOCIATI_PERSONNE" Association="Self.FK_HISTORIQ_ASSOCIATI_PERSONNE">
+      <End Role="Personne" EntitySet="Personne" />
+      <End Role="Historique" EntitySet="Historique" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ILLUSTRE_ILLUSTRER_ILLUSTRA" Association="Self.FK_ILLUSTRE_ILLUSTRER_ILLUSTRA">
+      <End Role="Illustrateur" EntitySet="Illustrateur" />
+      <End Role="Illustrer" EntitySet="Illustrer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ILLUSTRE_ILLUSTRER_LIVRES" Association="Self.FK_ILLUSTRE_ILLUSTRER_LIVRES">
+      <End Role="Livres" EntitySet="Livres" />
+      <End Role="Illustrer" EntitySet="Illustrer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LIVRES_TYPER_TYPE" Association="Self.FK_LIVRES_TYPER_TYPE">
+      <End Role="Type" EntitySet="Type" />
+      <End Role="Livres" EntitySet="Livres" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERSONNE_ASSOCIATI_CLASSE" Association="Self.FK_PERSONNE_ASSOCIATI_CLASSE">
+      <End Role="Classe" EntitySet="Classe" />
+      <End Role="Personne" EntitySet="Personne" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
